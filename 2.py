@@ -1,4 +1,6 @@
-size = int(input())
-for line in range(size):
-    numbers = [str(line + 1) for _ in range(size - line)]
-    print(' ' .join(numbers))
+n = 5  # Висота трикутника
+
+for i in range(1, n + 1):  # Зовнішній цикл по рядках
+    for j in range(n - i + 1):  # Внутрішній цикл по кількості елементів у рядку (зменшується з кожним рядком)
+        print(i, end=" ")  # Виводимо число i стільки разів, скільки дорівнює залишок
+    print()  # Перехід на новий рядок після завершення кожного рядка
